@@ -1,10 +1,8 @@
 import React, {FC} from 'react'
 import {
   StatisticsWidget1,
-  StatisticsWidget2,
   StatisticsWidget3,
   StatisticsWidget4,
-  StatisticsWidget5,
   StatisticsWidget6,
 } from '../../../../_metronic/partials/widgets'
 

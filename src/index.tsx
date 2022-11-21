@@ -1,9 +1,7 @@
 import {createRoot} from 'react-dom/client'
-// Axios
-import axios from 'axios'
+
 import {Chart, registerables} from 'chart.js'
 import {QueryClient, QueryClientProvider} from 'react-query'
-import {ReactQueryDevtools} from 'react-query/devtools'
 // Apps
 import {MetronicI18nProvider} from './_metronic/i18n/Metronici18n'
 /**
