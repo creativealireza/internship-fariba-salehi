@@ -8,14 +8,14 @@ export function MenuInner() {
     <>
       <MenuItem title={intl.formatMessage({id: 'MENU.DASHBOARD'})} to='/dashboard' />
       <MenuInnerWithSub
-        title='Crafted'
+        title={intl.formatMessage({id: 'MENU.CRAFTED'})}
         to='/crafted'
         menuPlacement='bottom-start'
         menuTrigger='click'
       >
         {/* PAGES */}
         <MenuInnerWithSub
-          title='Pages'
+          title={intl.formatMessage({id: 'MENU.PAGES'})}
           to='/crafted/pages'
           fontIcon='bi-archive'
           hasArrow={true}
@@ -23,52 +23,52 @@ export function MenuInner() {
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
           <MenuInnerWithSub
-            title='Profile'
+            title={intl.formatMessage({id: 'PAGES.PROFILE'})}
             to='/crafted/pages/profile'
             hasArrow={true}
             menuPlacement='right-start'
             menuTrigger={`{default:'click', lg: 'hover'}`}
           >
-            <MenuItem to='/crafted/pages/profile/overview' title='Overview' hasBullet={true} />
-            <MenuItem to='/crafted/pages/profile/campaigns' title='Campaigns' hasBullet={true} />
+            <MenuItem to='/crafted/pages/profile/overview' title={intl.formatMessage({id: 'PROFILE.OVERVIEW'})} hasBullet={true} />
+            <MenuItem to='/crafted/pages/profile/campaigns' title={intl.formatMessage({id: 'PROFILE.CAMPAIGNS'})} hasBullet={true} />
           </MenuInnerWithSub>
         </MenuInnerWithSub>
 
         {/* ACCOUNT */}
         <MenuInnerWithSub
-          title='Accounts'
+          title={intl.formatMessage({id: 'MENU.ACCOUNTS'})}
           to='/crafted/accounts'
           fontIcon='bi-person'
           hasArrow={true}
           menuPlacement='right-start'
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
-          <MenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
-          <MenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
+          <MenuItem to='/crafted/account/overview' title={intl.formatMessage({id: 'ACCOUNTS.OVERVIEW'})} hasBullet={true} />
+          <MenuItem to='/crafted/account/settings' title={intl.formatMessage({id: 'ACCOUNTS.SETTINGS'})} hasBullet={true} />
         </MenuInnerWithSub>
 
         {/* Widgets */}
         <MenuInnerWithSub
-          title='Widgets'
+          title={intl.formatMessage({id: 'MENU.WIDGETS'})}
           to='/crafted/widgets'
           fontIcon='bi-layers'
           hasArrow={true}
           menuPlacement='right-start'
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
-          <MenuItem to='/crafted/widgets/lists' title='Lists' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/statistics' title='Statistics' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/charts' title='Charts' hasBullet={true} />
-          <MenuItem to='/crafted/widgets/mixed' title='Mixed' hasBullet={true} />
+          <MenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'ACCOUNTS.LISTS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'ACCOUNTS.STATISTICS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'ACCOUNTS.CHARTS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'ACCOUNTS.MIXED'})} hasBullet={true} />
         </MenuInnerWithSub>
       </MenuInnerWithSub>
 
-      <MenuInnerWithSub title='Apps' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
+      <MenuInnerWithSub title={intl.formatMessage({id: 'MENU.APPS'})} to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
         {/* PAGES */}
         <MenuItem
           icon='/media/icons/duotune/general/gen051.svg'
           to='/apps/user-management/users'
-          title='User management'
+          title={intl.formatMessage({id: 'USER.USERMANAGEMENT'})}
         />
       </MenuInnerWithSub>
 
