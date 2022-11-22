@@ -8,6 +8,7 @@ import '@formatjs/intl-relativetimeformat/locale-data/es'
 import '@formatjs/intl-relativetimeformat/locale-data/fr'
 import '@formatjs/intl-relativetimeformat/locale-data/ja'
 import '@formatjs/intl-relativetimeformat/locale-data/zh'
+import '@formatjs/intl-relativetimeformat/locale-data/fa'
 
 import deMessages from './messages/de.json'
 import enMessages from './messages/en.json'
@@ -15,6 +16,7 @@ import esMessages from './messages/es.json'
 import frMessages from './messages/fr.json'
 import jaMessages from './messages/ja.json'
 import zhMessages from './messages/zh.json'
+import irMessages from './messages/ir.json'
 import { WithChildren } from '../helpers'
 
 const allMessages = {
@@ -24,6 +26,7 @@ const allMessages = {
   fr: frMessages,
   ja: jaMessages,
   zh: zhMessages,
+  ir: irMessages,
 }
 
 const I18nProvider: FC<WithChildren> = ({children}) => {
