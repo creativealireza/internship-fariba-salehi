@@ -5,8 +5,11 @@ import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {useLayout} from '../../core'
 import {Header} from './Header'
 import {Navbar} from './Navbar'
+import {useIntl} from 'react-intl'
 
 export function HeaderWrapper() {
+  const intl = useIntl()
+
   const {config, classes} = useLayout()
   if (!config.app?.header?.display) {
     return null
@@ -37,7 +40,7 @@ export function HeaderWrapper() {
               </div>
               <div className='d-flex align-items-center flex-grow-1 flex-lg-grow-0'>
                 <Link to='/dashboard' className='d-lg-none'>
-                  AU - Karaj
+                  {intl.formatMessage({id: 'NAME.SMALL'})}
                 </Link>
               </div>
             </div>
@@ -49,7 +52,7 @@ export function HeaderWrapper() {
             <Link to='/dashboard'>
               {config.layoutType !== 'dark-header' ? (
                 <p style={{marginTop: "1.5rem", color: 'white'}} className='h-25px app-sidebar-logo-default'>
-                Azad University - Karaj
+                  {intl.formatMessage({id: 'NAME.MEDIUM'})}
                 </p>
               ) : (
                 <>

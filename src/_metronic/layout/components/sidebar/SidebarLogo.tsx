@@ -1,9 +1,12 @@
 import {Link} from 'react-router-dom'
 import clsx from 'clsx'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {KTSVG} from '../../../helpers'
 import {useLayout} from '../../core'
+import {useIntl} from 'react-intl'
 
 const SidebarLogo = () => {
+  const intl = useIntl()
+
   const {config} = useLayout()
   const appSidebarDefaultMinimizeDesktopEnabled =
     config?.app?.sidebar?.default?.minimize?.desktop?.enabled
@@ -21,21 +24,21 @@ const SidebarLogo = () => {
       <Link to='/dashboard'>
         {config.layoutType === 'dark-sidebar' ? (
           <p style={{marginTop: "1.5rem", color: 'white'}} className='h-25px app-sidebar-logo-default'>
-            Azad University - Karaj
+            {intl.formatMessage({id: 'NAME.MEDIUM'})}
           </p>
         ) : (
           <div style={{marginTop: "1.5rem", color: 'white'}}>
             <p className='h-25px app-sidebar-logo-default theme-light-show'>
-              Azad University - Karaj
+              {intl.formatMessage({id: 'NAME.MEDIUM'})}
             </p>
             <p className='h-25px app-sidebar-logo-default theme-dark-show'>
-              Azad University - Karaj
+              {intl.formatMessage({id: 'NAME.MEDIUM'})}
             </p>
           </div>
         )}
         <div style={{marginTop: "0.6rem", textAlign: 'center'}}  className='h-20px app-sidebar-logo-minimize'>
           <p style={{color: 'white'}}>
-          AU Karaj
+            {intl.formatMessage({id: 'NAME.SMALL'})}
           </p>
         </div>
       </Link>

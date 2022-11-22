@@ -1,7 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react'
 import {useIntl} from 'react-intl'
-import {KTSVG} from '../../../../helpers'
 import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
 import {SidebarMenuItem} from './SidebarMenuItem'
 
@@ -18,20 +16,26 @@ const SidebarMenuMain = () => {
       />
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Crafted</span>
+          <span className='menu-section text-muted text-uppercase fs-4 ls-1'>{intl.formatMessage({id: 'MENU.CRAFTED'})}</span>
         </div>
       </div>
       <SidebarMenuItemWithSub
         to='/crafted/pages'
-        title='Pages'
+        title={intl.formatMessage({id: 'MENU.PAGES'})}
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen022.svg'
       >
-        <SidebarMenuItemWithSub to='/crafted/pages/profile' title='Profile' hasBullet={true}>
-          <SidebarMenuItem to='/crafted/pages/profile/overview' title='Overview' hasBullet={true} />
+        <SidebarMenuItemWithSub
+            to='/crafted/pages/profile'
+            title={intl.formatMessage({id: 'PAGES.PROFILE'})}
+            hasBullet={true}>
+          <SidebarMenuItem
+            to='/crafted/pages/profile/overview'
+            title={intl.formatMessage({id: 'PROFILE.OVERVIEW'})}
+            hasBullet={true} />
           <SidebarMenuItem
             to='/crafted/pages/profile/campaigns'
-            title='Campaigns'
+            title={intl.formatMessage({id: 'PROFILE.CAMPAIGNS'})}
             hasBullet={true}
           />
         </SidebarMenuItemWithSub>
@@ -39,33 +43,39 @@ const SidebarMenuMain = () => {
       </SidebarMenuItemWithSub>
       <SidebarMenuItemWithSub
         to='/crafted/accounts'
-        title='Accounts'
+        title={intl.formatMessage({id: 'MENU.ACCOUNTS'})}
         icon='/media/icons/duotune/communication/com006.svg'
         fontIcon='bi-person'
       >
-        <SidebarMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
+        <SidebarMenuItem 
+          to='/crafted/account/overview' 
+          title={intl.formatMessage({id: 'ACCOUNTS.OVERVIEW'})} 
+          hasBullet={true} />
+        <SidebarMenuItem 
+          to='/crafted/account/settings' 
+          title={intl.formatMessage({id: 'ACCOUNTS.SETTINGS'})} 
+          hasBullet={true} />
       </SidebarMenuItemWithSub>
       <SidebarMenuItemWithSub
         to='/crafted/widgets'
-        title='Widgets'
+        title={intl.formatMessage({id: 'MENU.WIDGETS'})}
         icon='/media/icons/duotune/general/gen025.svg'
         fontIcon='bi-layers'
       >
-        <SidebarMenuItem to='/crafted/widgets/lists' title='Lists' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/statistics' title='Statistics' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/charts' title='Charts' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/mixed' title='Mixed' hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'ACCOUNTS.LISTS'})}hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'ACCOUNTS.STATISTICS'})} hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'ACCOUNTS.CHARTS'})} hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'ACCOUNTS.MIXED'})} hasBullet={true} />
       </SidebarMenuItemWithSub>
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Apps</span>
+          <span className='menu-section text-muted text-uppercase fs-4 ls-1'>{intl.formatMessage({id: 'MENU.APPS'})}</span>
         </div>
       </div>
       <SidebarMenuItem
         to='/apps/user-management/users'
         icon='/media/icons/duotune/general/gen051.svg'
-        title='User management'
+        title={intl.formatMessage({id: 'USER.USERMANAGEMENT'})}
         fontIcon='bi-layers'
       />
     </>
