@@ -56,10 +56,10 @@ export function MenuInner() {
           menuPlacement='right-start'
           menuTrigger={`{default:'click', lg: 'hover'}`}
         >
-          <MenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'ACCOUNTS.LISTS'})} hasBullet={true} />
-          <MenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'ACCOUNTS.STATISTICS'})} hasBullet={true} />
-          <MenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'ACCOUNTS.CHARTS'})} hasBullet={true} />
-          <MenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'ACCOUNTS.MIXED'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'WIDGET.LISTS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'WIDGET.STATISTICS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'WIDGET.CHARTS'})} hasBullet={true} />
+          <MenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'WIDGET.MIXED'})} hasBullet={true} />
         </MenuInnerWithSub>
       </MenuInnerWithSub>
 

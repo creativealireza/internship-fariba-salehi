@@ -62,10 +62,10 @@ const SidebarMenuMain = () => {
         icon='/media/icons/duotune/general/gen025.svg'
         fontIcon='bi-layers'
       >
-        <SidebarMenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'ACCOUNTS.LISTS'})}hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'ACCOUNTS.STATISTICS'})} hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'ACCOUNTS.CHARTS'})} hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'ACCOUNTS.MIXED'})} hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/lists' title={intl.formatMessage({id: 'WIDGET.LISTS'})}hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/statistics' title={intl.formatMessage({id: 'WIDGET.STATISTICS'})} hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/charts' title={intl.formatMessage({id: 'WIDGET.CHARTS'})} hasBullet={true} />
+        <SidebarMenuItem to='/crafted/widgets/mixed' title={intl.formatMessage({id: 'WIDGET.MIXED'})} hasBullet={true} />
       </SidebarMenuItemWithSub>
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
