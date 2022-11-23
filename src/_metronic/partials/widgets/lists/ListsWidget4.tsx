@@ -46,7 +46,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                Top Authors
+                {intl.formatMessage({id: 'LISTS.TOPAUTHORS'})}
               </a>
               <span className='text-muted fw-semibold d-block fs-7'>Mark, Rowling, Esther</span>
             </div>
@@ -72,7 +72,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                Popular Authors
+                {intl.formatMessage({id: 'LISTS.POPULARAUTHORS'})}
               </a>
               <span className='text-muted fw-semibold d-block fs-7'>Randy, Steve, Mike</span>
             </div>
@@ -98,7 +98,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                New Users
+                {intl.formatMessage({id: 'LISTS.NEWUSERS'})}
               </a>
               <span className='text-muted fw-semibold d-block fs-7'>John, Pat, Jimmy</span>
             </div>
@@ -124,7 +124,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
           <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
             <div className='flex-grow-1 me-2'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                Active Customers
+                {intl.formatMessage({id: 'LISTS.ACTIVECUSTOMERS'})}
               </a>
               <span className='text-muted fw-semibold d-block fs-7'>Mark, Rowling, Esther</span>
             </div>
@@ -151,7 +151,7 @@ const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
             <div className='d-flex align-items-center flex-row-fluid flex-wrap'>
               <div className='flex-grow-1 me-2'>
                 <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                  Bestseller Theme
+                  {intl.formatMessage({id: 'LISTS.BESTSELLERS'})}
                 </a>
                 <span className='text-muted fw-semibold d-block fs-7'>Disco, Retro, Sports</span>
               </div>

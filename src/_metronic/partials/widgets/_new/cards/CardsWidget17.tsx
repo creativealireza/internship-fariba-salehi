@@ -3,6 +3,7 @@ import {FC, useEffect, useRef} from 'react'
 import {KTSVG} from '../../../../helpers'
 import {getCSSVariableValue} from '../../../../assets/ts/_utils'
 import {useThemeMode} from '../../../layout/theme-mode/ThemeModeProvider'
+import {useIntl} from 'react-intl'
 
 type Props = {
   className: string
@@ -17,6 +18,8 @@ const CardsWidget17: FC<Props> = ({
   chartLine = 11,
   chartRotate = 145,
 }) => {
+  const intl = useIntl()
+
   const chartRef = useRef<HTMLDivElement | null>(null)
   const {mode} = useThemeMode()
   useEffect(() => {
@@ -50,7 +53,8 @@ const CardsWidget17: FC<Props> = ({
               2.2%
             </span>
           </div>
-          <span className='text-gray-400 pt-1 fw-semibold fs-6'>Projects Earnings in April</span>
+          <span className='text-gray-400 pt-1 fw-semibold fs-6'>{intl.formatMessage({id: 'ITEMS.PEM'})}</span>
+          <span className='text-gray-400 pt-1 fw-semibold fs-6'>April</span>
         </div>
       </div>
 
@@ -68,12 +72,12 @@ const CardsWidget17: FC<Props> = ({
         <div className='d-flex flex-column content-justify-center flex-row-fluid'>
           <div className='d-flex fw-semibold align-items-center'>
             <div className='bullet w-8px h-3px rounded-2 bg-success me-3'></div>
-            <div className='text-gray-500 flex-grow-1 me-4'>Leaf CRM</div>
+            <div className='text-gray-500 flex-grow-1 me-4'>{intl.formatMessage({id: 'ITEMS.CRM'})}</div>
             <div className='fw-bolder text-gray-700 text-xxl-end'>$7,660</div>
           </div>
           <div className='d-flex fw-semibold align-items-center my-3'>
             <div className='bullet w-8px h-3px rounded-2 bg-primary me-3'></div>
-            <div className='text-gray-500 flex-grow-1 me-4'>Mivy App</div>
+            <div className='text-gray-500 flex-grow-1 me-4'>{intl.formatMessage({id: 'ITEMS.APP'})}</div>
             <div className='fw-bolder text-gray-700 text-xxl-end'>$2,820</div>
           </div>
           <div className='d-flex fw-semibold align-items-center'>
@@ -81,7 +85,7 @@ const CardsWidget17: FC<Props> = ({
               className='bullet w-8px h-3px rounded-2 me-3'
               style={{backgroundColor: '#E4E6EF'}}
             ></div>
-            <div className='text-gray-500 flex-grow-1 me-4'>Others</div>
+            <div className='text-gray-500 flex-grow-1 me-4'>{intl.formatMessage({id: 'ITEMS.OTHERS'})}</div>
             <div className=' fw-bolder text-gray-700 text-xxl-end'>$45,257</div>
           </div>
         </div>

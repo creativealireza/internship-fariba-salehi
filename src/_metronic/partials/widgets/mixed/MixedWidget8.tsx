@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {toAbsoluteUrl} from '../../../helpers'
 import {getCSSVariableValue} from '../../../assets/ts/_utils'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
 import {useThemeMode} from '../../layout/theme-mode/ThemeModeProvider'
+import {useIntl} from 'react-intl'
 
 type Props = {
   className: string
@@ -13,6 +14,8 @@ type Props = {
 }
 
 const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => {
+  const intl = useIntl()
+
   const chartRef = useRef<HTMLDivElement | null>(null)
   const {mode} = useThemeMode()
   const refreshChart = () => {
@@ -84,7 +87,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
               {/* begin::Title */}
               <div>
                 <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
-                  Top Authors
+                  {intl.formatMessage({id: 'LISTS.TOPAUTHORS'})}
                 </a>
                 <div className='fs-7 text-muted fw-semibold mt-1'>Ricky Hunt, Sandra Trepp</div>
               </div>
