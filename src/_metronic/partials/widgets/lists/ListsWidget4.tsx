@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {toAbsoluteUrl} from '../../../helpers'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {useIntl} from 'react-intl'
 
 type Props = {
   className: string
@@ -9,13 +10,15 @@ type Props = {
 }
 
 const ListsWidget4: React.FC<Props> = ({className, items = 6}) => {
+  const intl = useIntl()
+
   return (
     <div className='card card-xl-stretch mb-xl-8'>
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold text-dark'>Trends</span>
-          <span className='text-muted mt-1 fw-semibold fs-7'>Latest tech trends</span>
+          <span className='card-label fw-bold text-dark'>{intl.formatMessage({id: 'LISTS.TRENDS'})}</span>
+          <span className='text-muted mt-1 fw-semibold fs-7'>{intl.formatMessage({id: 'LISTS.LATESTTECHTRENDS'})}</span>
         </h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}

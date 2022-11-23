@@ -1,18 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import {toAbsoluteUrl} from '../../../helpers'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {useIntl} from 'react-intl'
 
 type Props = {
   className: string
 }
 
 const ListsWidget2: React.FC<Props> = ({className}) => {
+  const intl = useIntl()
+
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bold text-dark'>Authors</h3>
+        <h3 className='card-title fw-bold text-dark'>{intl.formatMessage({id: 'LISTS.AUTHORS'})}</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <Dropdown1 />

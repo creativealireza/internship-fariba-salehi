@@ -2,17 +2,20 @@
 import React from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
+import {useIntl} from 'react-intl'
 
 type Props = {
   className: string
 }
 
 const ListsWidget6: React.FC<Props> = ({className}) => {
+  const intl = useIntl()
+
   return (
     <div className='card card-xl-stretch mb-5 mb-xl-8'>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bold text-dark'>Notifications</h3>
+        <h3 className='card-title fw-bold text-dark'>{intl.formatMessage({id: 'LISTS.NOTIFICATIONS'})}</h3>
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <Dropdown1 />
@@ -32,9 +35,11 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Group lunch celebration
+              {intl.formatMessage({id: 'ITEMS.GLC'})}
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
+            <span className='text-muted fw-semibold d-block'>
+              {intl.formatMessage({id: 'ITEMS.DUEIN'})} 6 {intl.formatMessage({id: 'ITEMS.DAYS'})}
+            </span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
@@ -52,9 +57,11 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Navigation optimization
+              {intl.formatMessage({id: 'ITEMS.NAVOPTIMIZATION'})}
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
+            <span className='text-muted fw-semibold d-block'>
+              {intl.formatMessage({id: 'ITEMS.DUEIN'})} 2 {intl.formatMessage({id: 'ITEMS.DAYS'})}
+            </span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
@@ -72,9 +79,11 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Rebrand strategy planning
+              {intl.formatMessage({id: 'ITEMS.RSP'})}
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 5 Days</span>
+            <span className='text-muted fw-semibold d-block'>
+              {intl.formatMessage({id: 'ITEMS.DUEIN'})} 5 {intl.formatMessage({id: 'ITEMS.DAYS'})}
+            </span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
@@ -92,9 +101,11 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Product goals strategy
+              {intl.formatMessage({id: 'ITEMS.PGS'})}
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 7 Days</span>
+            <span className='text-muted fw-semibold d-block'>
+              {intl.formatMessage({id: 'ITEMS.DUEIN'})} 7 {intl.formatMessage({id: 'ITEMS.DAYS'})}
+            </span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
