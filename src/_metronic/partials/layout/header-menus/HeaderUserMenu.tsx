@@ -37,7 +37,7 @@ const HeaderUserMenu: FC = () => {
 
       <div className='menu-item px-5'>
         <Link to={'/crafted/pages/profile'} className='menu-link px-5'>
-          {intl.formatMessage({id: 'ITEMS.OTHERS'})}
+          {intl.formatMessage({id: 'HEADERPROFILE.MYPROFILE'})}
         </Link>
       </div>
 
@@ -47,13 +47,13 @@ const HeaderUserMenu: FC = () => {
 
       <div className='menu-item px-5 my-1'>
         <Link to='/crafted/account/settings' className='menu-link px-5'>
-          {intl.formatMessage({id: 'ITEMS.OTHERS'})}
+          {intl.formatMessage({id: 'HEADERPROFILE.ACCOUNTSETTING'})}
         </Link>
       </div>
 
       <div className='menu-item px-5'>
         <a className='menu-link px-5'>
-          {intl.formatMessage({id: 'ITEMS.OTHERS'})}
+          {intl.formatMessage({id: 'HEADERPROFILE.SIGNOUT'})}
         </a>
       </div>
     </div>
