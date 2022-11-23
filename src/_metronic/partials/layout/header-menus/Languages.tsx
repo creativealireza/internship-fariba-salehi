@@ -12,7 +12,7 @@ const languages = [
     flag: toAbsoluteUrl('/media/flags/united-states.svg'),
   },
   {
-    lang: 'ir',
+    lang: 'fa',
     name: 'Iran',
     flag: toAbsoluteUrl('/media/flags/iran.svg'),
   },
