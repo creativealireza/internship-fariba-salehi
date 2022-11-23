@@ -1,5 +1,60 @@
 {
   "TRANSLATOR.SELECT": "Select your language",
+  "NAME.SMALL": "AU Karaj",
+  "NAME.MEDIUM": "Azad University - Karaj",
+  "NAME.LARGE": "Azad University - Karaj",
+  
+  "MENU.CRAFTED": "Crafted",
+  "MENU.ACCOUNTS": "Accounts",
+  "MENU.WIDGETS": "Widgets",
+  "PAGES.PROFILE": "Profile",
+  "PROFILE.OVERVIEW": "Overview",
+  "PROFILE.CAMPAIGNS": "Campaigns",
+
+  "USER.USERMANAGEMENT": "User Management",
+
+  "ACCOUNTS.OVERVIEW": "Overview",
+  "ACCOUNTS.SETTINGS": "Settings",
+
+  "WIDGET.LISTS": "Lists",
+  "WIDGET.CHARTS": "Charts",
+  "WIDGET.STATISTICS": "Statistics",
+  "WIDGET.MIXED": "Mixed",
+
+  "LISTS.AUTHORS": "Authors",
+  "LISTS.TOPAUTHORS": "Top Authors",
+  "LISTS.POPULARAUTHORS": "Popular Authors",
+  "LISTS.NOTIFICATIONS": "Notifications",
+  "LISTS.NEWUSERS": "New Users",
+  "LISTS.ACTIVECUSTOMERS": "Active Customers",
+  "LISTS.BESTSELLERS": "Bestsellers",
+  "LISTS.TRENDS": "Trens",
+  "LISTS.LATESTTECHTRENDS": "Latest Tech Trends",
+
+  "ITEMS.GLC": "Group lunch celebration",
+  "ITEMS.NAVOPTIMIZATION": "Navigation optimization",
+  "ITEMS.RSP": "Rebrand strategy planning",
+  "ITEMS.PGS": "Product goals strategy",
+  "ITEMS.DUEIN": "Due in",
+  "ITEMS.DAYS": "Days",
+  "ITEMS.PROFFESTIONALS": "Proffessionals",
+  "ITEMS.TODAYSHEROES": "Today’s Heroes",
+  "ITEMS.PEM": "Projects Earnings in ",
+  "ITEMS.CRM": "CRM",
+  "ITEMS.APP": "Digikala",
+  "ITEMS.OTHERS": "Others",
+
+  "HEADERPROFILE.MYPROFILE": "My Profile",
+  "HEADERPROFILE.ACCOUNTSETTING": "Account Settings",
+  "HEADERPROFILE.SIGNOUT": "Sign Out",
+  "HEADERPROFILE.PRO": "Pro",
+  
+  "LANGUAGES.LANGUAGES": "Languages",
+  
+  "THEMES.LIGHT": "Light",
+  "THEMES.DARK": "Dark",
+  "THEMES.SYSTEM": "System",
+
   "MENU.NEW": "new",
   "MENU.ACTIONS": "Actions",
   "MENU.CREATE_POST": "Create New Post",
