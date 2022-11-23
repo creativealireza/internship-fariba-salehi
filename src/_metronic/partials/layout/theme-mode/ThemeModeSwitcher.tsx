@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import {KTSVG} from '../../../helpers'
 import {ThemeModeComponent} from '../../../assets/ts/layout'
 import {ThemeModeType, useThemeMode} from './ThemeModeProvider'
+import {useIntl} from 'react-intl'
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 type Props = {
@@ -19,6 +20,8 @@ const ThemeModeSwitcher = ({
   menuPlacement = 'bottom-end',
   menuTrigger = "{default: 'click', lg: 'hover'}",
 }: Props) => {
+  const intl = useIntl()
+
   const {mode, menuMode, updateMode, updateMenuMode} = useThemeMode()
   const calculatedMode = mode === 'system' ? systemMode : mode
   const switchMode = (_mode: ThemeModeType) => {
@@ -67,7 +70,9 @@ const ThemeModeSwitcher = ({
             <span className='menu-icon' data-kt-element='icon'>
               <KTSVG path='/media/icons/duotune/general/gen060.svg' className='svg-icon-3' />
             </span>
-            <span className='menu-title'>Light</span>
+            <span className='menu-title'>
+              {intl.formatMessage({id: 'THEMES.LIGHT'})}
+            </span>
           </a>
         </div>
         {/* end::Menu item */}
@@ -82,7 +87,9 @@ const ThemeModeSwitcher = ({
             <span className='menu-icon' data-kt-element='icon'>
               <KTSVG path='/media/icons/duotune/general/gen061.svg' className='svg-icon-3' />
             </span>
-            <span className='menu-title'>Dark</span>
+            <span className='menu-title'>
+              {intl.formatMessage({id: 'THEMES.DARK'})}
+            </span>
           </a>
         </div>
         {/* end::Menu item */}
@@ -97,7 +104,9 @@ const ThemeModeSwitcher = ({
             <span className='menu-icon' data-kt-element='icon'>
               <KTSVG path='/media/icons/duotune/general/gen062.svg' className='svg-icon-3' />
             </span>
-            <span className='menu-title'>System</span>
+            <span className='menu-title'>
+              {intl.formatMessage({id: 'THEMES.SYSTEM'})}
+            </span>
           </a>
         </div>
         {/* end::Menu item */}
