@@ -41,3 +41,8 @@ body {
 [data-theme="dark"] .splash-screen span {
   color: #92929F;
 }
+
+img.auk {
+  width: 6rem !important;
+  height: 10rem !important;
+}
