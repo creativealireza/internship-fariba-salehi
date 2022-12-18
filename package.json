@@ -1,8 +1,7 @@
 {
-  "name": "demo1",
+  "name": "kiau fariba salehi internship",
   "version": "8.1.5",
-  "private": true,
-  "homepage": "/metronic8/react/demo1",
+  "private": false,
   "dependencies": {
     "@formatjs/intl-pluralrules": "4.3.3",
     "@formatjs/intl-relativetimeformat": "10.0.1",
